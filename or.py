@@ -16,3 +16,5 @@ jdbcDF = spark.read.format("jdbc") \
     .option("password", "password123") \
     .option("driver", "oracle.jdbc.driver.OracleDriver") \
     .load()
+
+jdbcDF.show()
