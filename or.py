@@ -11,7 +11,7 @@ spark = SparkSession.builder \
 
 jdbcDF = spark.read.format("jdbc") \
     .option("url", "jdbc:oracle:thin:@192.168.77.12:1521/FREE") \
-    .option("query", "from * from POWER_PLANTS") \
+    .option("query", "select * from POWER_PLANTS") \
     .option("user", "system") \
     .option("password", "password123") \
     .option("driver", "oracle.jdbc.driver.OracleDriver") \
